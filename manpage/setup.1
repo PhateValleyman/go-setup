@@ -1,0 +1,45 @@
+.TH SETUP 1 "November 2024" "v1.0" "User Commands"
+
+.SH NAME
+setup \- a tool for managing configuration files in Termux
+
+.SH SYNOPSIS
+.B setup
+.RI < option >
+
+.SH DESCRIPTION
+The \fBsetup\fR tool allows you to edit and source various configuration files in the Termux environment.
+
+.SH OPTIONS
+.TP
+\fBalias\fR
+Edit the file \fB$PREFIX/etc/profile.d/alias.sh\fR.
+.TP
+\fBdefaults\fR
+Edit the file \fB$PREFIX/etc/profile.d/defaults.sh\fR.
+.TP
+\fBfunctions\fR
+Edit the file \fB$PREFIX/etc/profile.d/functions.sh\fR.
+.TP
+\fBpaths\fR
+Edit the file \fB$PREFIX/etc/profile.d/paths.sh\fR.
+.TP
+\fBprofile\fR
+Edit the file \fB$PREFIX/etc/profile\fR.
+.TP
+\fB-v\fR, \fB--version\fR, \fBversion\fR
+Display the tool's version.
+.TP
+\fB-h\fR, \fB--help\fR, \fBhelp\fR, \fB-?\fR
+Display help information.
+
+.SH ENVIRONMENT VARIABLES
+.TP
+\fBEDITOR\fR
+Specifies the default text editor to use (e.g., \fBnano\fR, \fBvim\fR).
+.TP
+\fBPREFIX\fR
+The root path for Termux, defaulting to \fB/data/data/com.termux/files/usr\fR.
+
+.SH AUTHOR
+PhateValleyman <Jonas.Ned@outlook.com>
